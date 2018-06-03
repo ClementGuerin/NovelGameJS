@@ -1,20 +1,10 @@
 window.addEventListener('load', function(){
-    var httpRequest = new XMLHttpRequest()
-    this.story = 1
-    var data = 'story=' + this.story
-    httpRequest.open('POST', 'includes/readStory.php', true)
-    httpRequest.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    httpRequest.send(data)
-    httpRequest.onreadystatechange = function(){
-        if(httpRequest.readyState === 4){
-            document.querySelector('.ajax').innerHTML = httpRequest.responseText
-        }
-    }
+    nextStory(1)
 })
 
 function button(id){
-    var story = document.querySelector('#button' + id).value
-    nextStory(story)
+    var thisStory = document.querySelector('#button' + id).value
+    nextStory(thisStory)
 }
 
 
@@ -26,9 +16,7 @@ function nextStory(story){
     httpRequest.send(data)
     httpRequest.onreadystatechange = function(){
         if(httpRequest.readyState === 4){
-            document.querySelector('.ajax').innerHTML = httpRequest.responseText
-        } else {
-            document.querySelector('.ajax').innerHTML = "Chargement"
+            document.querySelector('.story').innerHTML = httpRequest.responseText
         }
     }
 }
