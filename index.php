@@ -2,7 +2,7 @@
     include "includes/header.php";
 ?>
 
-<div class="story">
+<div class="game">
 </div>
 
 

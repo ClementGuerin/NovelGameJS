@@ -16,7 +16,7 @@ function nextStory(story){
     httpRequest.send(data)
     httpRequest.onreadystatechange = function(){
         if(httpRequest.readyState === 4){
-            document.querySelector('.story').innerHTML = httpRequest.responseText
+            document.querySelector('.game').innerHTML = httpRequest.responseText
         }
     }
 }
