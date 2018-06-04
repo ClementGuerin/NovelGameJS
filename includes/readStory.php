@@ -38,7 +38,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $button1_id = $row["id"];
-$button1_message = $row["message"];
+$button1_message = utf8_encode($row["message"]);
 $button1_story = $row["story"];
 
 $sql = "SELECT 
@@ -56,7 +56,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $button2_id = $row["id"];
-$button2_message = $row["message"];
+$button2_message = utf8_encode($row["message"]);
 $button2_story = $row["story"];
 
 $sql = "SELECT 
@@ -74,7 +74,7 @@ $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $button3_id = $row["id"];
-$button3_message = $row["message"];
+$button3_message = utf8_encode($row["message"]);
 $button3_story = $row["story"];
 
 include "functions.php";
