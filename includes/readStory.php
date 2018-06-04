@@ -18,7 +18,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 $idStory = $row["id"];
-$messageStory = $row["message"];
+$messageStory = utf8_encode($row["message"]);
 $reply1 = $row["reply1"];
 $reply2 = $row["reply2"];
 $reply3 = $row["reply3"];
@@ -77,6 +77,7 @@ $button3_id = $row["id"];
 $button3_message = $row["message"];
 $button3_story = $row["story"];
 
+include "functions.php";
 include "../views/story.php";
 include "../views/replies.php";
 ?>
