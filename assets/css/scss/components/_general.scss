@@ -1,0 +1,32 @@
+.story{
+    @include font-regular;
+    font-size: 1.3em;
+    padding-top: 60px;
+    line-height: 1.8;
+}
+
+.replies{
+    ul{
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+        
+        li{
+            
+            button{
+                color: darken(#007bff, 10%);
+                border: 0;
+                background: 0;
+                @include font-bold;
+                font-size: 1.3em;
+                transition: 0.25s;
+                padding: 4px 0;
+                cursor: pointer;
+            }
+            
+            button:hover{
+                color: #007bff;
+            }
+        }
+    }
+}
