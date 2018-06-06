@@ -60,20 +60,19 @@ function createAudio(){
     player.src = "assets/songs/soundtrack.mp3"
     player.loop = true
     player.volume = 0.1
-    player.play()
     document.querySelector('.player').appendChild(player)
 }
 
 document.querySelector('.speaker-on').addEventListener('click', function(){
     var player = document.querySelector('.player audio')
     player.pause()
-    document.querySelector('.speaker-on').style.display = "none";
-    document.querySelector('.speaker-off').style.display = "block";
+    document.querySelector('.speaker-off').style.display = "block"
+    document.querySelector('.speaker-on').style.display = "none"
 })
 
 document.querySelector('.speaker-off').addEventListener('click', function(){
     var player = document.querySelector('.player audio')
     player.play()
-    document.querySelector('.speaker-off').style.display = "none";
-    document.querySelector('.speaker-on').style.display = "block";
+    document.querySelector('.speaker-on').style.display = "block"
+    document.querySelector('.speaker-off').style.display = "none"
 })

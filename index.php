@@ -14,8 +14,8 @@
 </div>
 <div class="player">
     <div class="player-controls">
-        <div class="speaker-on"></div>
-        <div class="speaker-off"></div>
+        <div class="speaker speaker-on"></div>
+        <div class="speaker speaker-off"></div>
     </div>
 </div>
 

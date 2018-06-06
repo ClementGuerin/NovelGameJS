@@ -65,12 +65,9 @@
 
 .player{
     .player-controls{
-        .speaker-on{
+        .speaker{
             height: 60px;
             width: 60px;
-            background: #fff url(../img/speaker-on.png) no-repeat;
-            border: solid 1px #ddd;
-            background-position: center center;
             border-radius: 100%;
             position: fixed;
             right: 50px;
@@ -82,38 +79,35 @@
                 right: 15px;
                 bottom: 15px;
             }
+        }
+        
+        .speaker:hover{
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);
+        }
+        
+        // On/Off
+        
+        .speaker-on{
+
+            background: #fff url(../img/speaker-on.png) no-repeat;
+            background-position: center center;
+            display: none;
         }
         
         .speaker-on:hover{
             background: #fff url(../img/speaker-on.png) no-repeat;
             background-position: center center;
-            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);
         }
         
         .speaker-off{
-            height: 60px;
-            width: 60px;
+
             background: #F03434 url(../img/speaker-off.png) no-repeat;
-            border: solid 1px #ddd;
             background-position: center center;
-            border-radius: 100%;
-            position: fixed;
-            right: 50px;
-            bottom: 50px;
-            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
-            transition: 0.2s;
-            cursor: pointer;
-            @include responsive-below(sm){
-                right: 15px;
-                bottom: 15px;
-            }
-            display: none;
         }
 
         .speaker-off:hover{
             background: #F03434 url(../img/speaker-off.png) no-repeat;
             background-position: center center;
-            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);
         }
     }
 }

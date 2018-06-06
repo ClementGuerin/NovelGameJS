@@ -452,12 +452,9 @@ template {
 }
 
 /* line 68, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
-.player .player-controls .speaker-on {
+.player .player-controls .speaker {
   height: 60px;
   width: 60px;
-  background: #fff url(../img/speaker-on.png) no-repeat;
-  border: solid 1px #ddd;
-  background-position: center center;
   border-radius: 100%;
   position: fixed;
   right: 50px;
@@ -469,49 +466,40 @@ template {
 
 @media (max-width: 767px) {
   /* line 68, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
-  .player .player-controls .speaker-on {
+  .player .player-controls .speaker {
     right: 15px;
     bottom: 15px;
   }
 }
 
-/* line 87, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
-.player .player-controls .speaker-on:hover {
-  background: #fff url(../img/speaker-on.png) no-repeat;
-  background-position: center center;
+/* line 84, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
-/* line 93, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
-.player .player-controls .speaker-off {
-  height: 60px;
-  width: 60px;
-  background: #F03434 url(../img/speaker-off.png) no-repeat;
-  border: solid 1px #ddd;
+/* line 90, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-on {
+  background: #fff url(../img/speaker-on.png) no-repeat;
   background-position: center center;
-  border-radius: 100%;
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-  transition: 0.2s;
-  cursor: pointer;
   display: none;
 }
 
-@media (max-width: 767px) {
-  /* line 93, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
-  .player .player-controls .speaker-off {
-    right: 15px;
-    bottom: 15px;
-  }
+/* line 97, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-on:hover {
+  background: #fff url(../img/speaker-on.png) no-repeat;
+  background-position: center center;
 }
 
-/* line 113, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+/* line 102, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-off {
+  background: #F03434 url(../img/speaker-off.png) no-repeat;
+  background-position: center center;
+}
+
+/* line 108, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .player .player-controls .speaker-off:hover {
   background: #F03434 url(../img/speaker-off.png) no-repeat;
   background-position: center center;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*# sourceMappingURL=../styles.map */
