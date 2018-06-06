@@ -9,6 +9,7 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
+    <h1>Escape From Somewhere</h1>
 </div>
 <div class="game">
 </div>

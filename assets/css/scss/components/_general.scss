@@ -1,11 +1,21 @@
+h1{
+    margin-bottom: 0;
+    margin-top: 40px;
+    color: darken(#fff,10%);
+    @include responsive-below(sm){
+        color: inherit;
+    }
+}
+
 .story{
     @include font-regular;
     font-size: 1.3em;
-    padding-top: 60px;
+    padding-top: 40px;
     line-height: 1.8;
     animation: fadeIn 1s;
     @include responsive-below(sm){
         font-size: 1.1em;
+        padding-top: 30px;
     }
 }
 
