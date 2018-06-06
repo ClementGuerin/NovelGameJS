@@ -19,7 +19,7 @@
             
             <?php if($reply1 == null && $reply2 == null && $reply3 == null){ ?>
             <li>
-                <button value="1" id="button0" onclick="button(0);">Recommencer...</button>
+                <button class="grey" value="1" id="button0" onclick="button(0);">Recommencer...</button>
             </li>
             <?php } ?>
         </ul>

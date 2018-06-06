@@ -1,19 +1,31 @@
+// Init
+
 window.addEventListener('load', function(){
+    // Take last save if she exist
     if(localStorage.getItem("currentStory") !== null){
         nextStory(localStorage.getItem("currentStory"))
     } else {
         nextStory(1)
-        document.querySelector('.alert-save').style.display = "block";
+        document.querySelector('.alert-save').style.display = "block"
     }
+    // Create audio player
+    createAudio()
 })
+
+// Buttons inside replies.php (onclick in buttons element)
 
 function button(id){
     var thisStory = document.querySelector('#button' + id).value
+    // Save current story in localStorage
     localStorage.setItem("currentStory", thisStory)
-    document.querySelector('.alert-save').style.display = "";
+    // Hide alert-save if one button is clicked
+    if(document.querySelector('.alert-save').style.display == "block"){
+        document.querySelector('.alert-save').style.display = ""
+    }
     nextStory(thisStory)
 }
 
+// Get next Story with Ajax request
 
 function nextStory(story){
     var httpRequest = new XMLHttpRequest()
@@ -29,6 +41,8 @@ function nextStory(story){
     }
 }
 
+// Check if current Story is good or bad ending
+
 function checkStory(story){
     if(story == '31' || story == '44'){
         document.querySelector('.story').style.color = "green"
@@ -38,3 +52,28 @@ function checkStory(story){
         document.querySelector('.story').style.color = ""
     }
 }
+
+// Audio player & Controls
+
+function createAudio(){
+    var player = document.createElement("AUDIO")
+    player.src = "assets/songs/soundtrack.mp3"
+    player.loop = true
+    player.volume = 0.1
+    player.play()
+    document.querySelector('.player').appendChild(player)
+}
+
+document.querySelector('.speaker-on').addEventListener('click', function(){
+    var player = document.querySelector('.player audio')
+    player.pause()
+    document.querySelector('.speaker-on').style.display = "none";
+    document.querySelector('.speaker-off').style.display = "block";
+})
+
+document.querySelector('.speaker-off').addEventListener('click', function(){
+    var player = document.querySelector('.player audio')
+    player.play()
+    document.querySelector('.speaker-off').style.display = "none";
+    document.querySelector('.speaker-on').style.display = "block";
+})

@@ -383,19 +383,26 @@ template {
   animation: fadeIn 1s;
 }
 
-/* line 9, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+@media (max-width: 767px) {
+  /* line 1, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+  .story {
+    font-size: 1.1em;
+  }
+}
+
+/* line 12, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies {
   animation: fadeIn 1s;
 }
 
-/* line 12, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+/* line 15, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies ul {
   list-style: none;
   padding: 0;
   margin-top: 30px;
 }
 
-/* line 19, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+/* line 22, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies ul li button {
   color: #0062cc;
   border: 0;
@@ -407,9 +414,26 @@ template {
   cursor: pointer;
 }
 
-/* line 30, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+@media (max-width: 767px) {
+  /* line 22, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+  .replies ul li button {
+    font-size: 1em;
+  }
+}
+
+/* line 36, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies ul li button:hover {
   color: #007bff;
+}
+
+/* line 40, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.replies ul li .grey {
+  color: #5f6f7e !important;
+}
+
+/* line 44, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.replies ul li .grey:hover {
+  color: lightslategrey !important;
 }
 
 @keyframes fadeIn {
@@ -421,10 +445,73 @@ template {
   }
 }
 
-/* line 47, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+/* line 61, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .alert-save {
   display: none;
   margin-top: 20px;
+}
+
+/* line 68, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-on {
+  height: 60px;
+  width: 60px;
+  background: #fff url(../img/speaker-on.png) no-repeat;
+  border: solid 1px #ddd;
+  background-position: center center;
+  border-radius: 100%;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  /* line 68, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+  .player .player-controls .speaker-on {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* line 87, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-on:hover {
+  background: #fff url(../img/speaker-on.png) no-repeat;
+  background-position: center center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* line 93, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-off {
+  height: 60px;
+  width: 60px;
+  background: #F03434 url(../img/speaker-off.png) no-repeat;
+  border: solid 1px #ddd;
+  background-position: center center;
+  border-radius: 100%;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /* line 93, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+  .player .player-controls .speaker-off {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/* line 113, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.player .player-controls .speaker-off:hover {
+  background: #F03434 url(../img/speaker-off.png) no-repeat;
+  background-position: center center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
 }
 
 /*# sourceMappingURL=../styles.map */
