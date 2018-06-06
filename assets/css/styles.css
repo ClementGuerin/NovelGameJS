@@ -380,16 +380,22 @@ template {
   font-size: 1.3em;
   padding-top: 60px;
   line-height: 1.8;
+  animation: fadeIn 1s;
 }
 
 /* line 9, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.replies {
+  animation: fadeIn 1s;
+}
+
+/* line 12, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies ul {
   list-style: none;
   padding: 0;
   margin-top: 30px;
 }
 
-/* line 16, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+/* line 19, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies ul li button {
   color: #0062cc;
   border: 0;
@@ -397,13 +403,28 @@ template {
   font-family: 'NotoSerif-Bold', serif;
   font-size: 1.3em;
   transition: 0.25s;
-  padding: 4px 0;
+  padding: 6px 0;
   cursor: pointer;
 }
 
-/* line 27, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+/* line 30, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
 .replies ul li button:hover {
   color: #007bff;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 47, C:/wamp64/www/NovelGame/assets/css/scss/components/_general.scss */
+.alert-save {
+  display: none;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=../styles.map */

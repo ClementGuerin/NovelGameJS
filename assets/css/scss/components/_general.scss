@@ -3,9 +3,12 @@
     font-size: 1.3em;
     padding-top: 60px;
     line-height: 1.8;
+    animation: fadeIn 1s;
 }
 
 .replies{
+    animation: fadeIn 1s;
+    
     ul{
         list-style: none;
         padding: 0;
@@ -20,7 +23,7 @@
                 @include font-bold;
                 font-size: 1.3em;
                 transition: 0.25s;
-                padding: 4px 0;
+                padding: 6px 0;
                 cursor: pointer;
             }
             
@@ -29,4 +32,19 @@
             }
         }
     }
+    
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.alert-save{
+    display: none;
+    margin-top: 20px;
 }
