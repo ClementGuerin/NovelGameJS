@@ -58,3 +58,7 @@ Le Player Audio est créer et controller en JavaScript, les contrôles permetten
 | Polices |
 | --- | 
 | [Noto Serif](https://fonts.google.com/specimen/Noto+Serif) |
+
+___
+
+Crédits : [Clément Guérin](https://github.com/ClementGuerin), [Dimitri Fouque](https://github.com/Nyroux).
